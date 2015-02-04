@@ -1,0 +1,102 @@
+angular.callbacks._2 ([
+    {
+        "id": 1,
+        "name": "card1",
+        "url" : "../CardGame/css/images/card1.png"
+    },
+    {
+        "id": 2,
+        "name": "card9",
+        "url" : "../CardGame/css/images/card9.png"
+    },
+    {
+        "id": 3,
+        "name": "card3",
+        "url" : "../CardGame/css/images/card3.png"
+    },
+    {
+        "id": 4,
+        "name": "card4",
+        "url" : "../CardGame/css/images/card4.png"
+    },
+    {
+        "id": 5,
+        "name": "card8",
+        "url" : "../CardGame/css/images/card8.png"
+    },
+    {
+        "id": 6,
+        "name": "card5",
+        "url" : "../CardGame/css/images/card5.png"
+    },
+    {
+        "id": 7,
+        "name": "card3",
+        "url" : "../CardGame/css/images/card3.png"
+    },
+    {
+        "id": 8,
+        "name": "card6",
+        "url" : "../CardGame/css/images/card6.png"
+    },
+    {
+        "id": 9,
+        "name": "card2",
+        "url" : "../CardGame/css/images/card2.png"
+    },
+    {
+        "id": 10,
+        "name": "card5",
+        "url" : "../CardGame/css/images/card5.png"
+    },
+    {
+        "id": 11,
+        "name": "card6",
+        "url" : "../CardGame/css/images/card6.png"
+    },
+    {
+        "id": 12,
+        "name": "card7",
+        "url" : "../CardGame/css/images/card7.png"
+    },
+    {
+        "id": 13,
+        "name": "card4",
+        "url" : "../CardGame/css/images/card4.png"
+    },
+    {
+        "id": 14,
+        "name": "card2",
+        "url" : "../CardGame/css/images/card2.png"
+    },
+    {
+        "id": 15,
+        "name": "card10",
+        "url" : "../CardGame/css/images/card10.png"
+    },
+    {
+        "id": 16,
+        "name": "card7",
+        "url" : "../CardGame/css/images/card7.png"
+    },
+    {
+        "id": 17,
+        "name": "card8",
+        "url" : "../CardGame/css/images/card8.png"
+    },
+    {
+        "id": 18,
+        "name": "card10",
+        "url" : "../CardGame/css/images/card10.png"
+    },
+    {
+        "id": 19,
+        "name": "card9",
+        "url" : "../CardGame/css/images/card9.png"
+    },
+    {
+        "id": 20,
+        "name": "card1",
+        "url" : "../CardGame/css/images/card1.png"
+    }
+]);

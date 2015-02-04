@@ -1,0 +1,56 @@
+body {
+	background: #C0C0C0;
+	color: white;
+}
+
+div.card {
+	background: url("../css/images/cardBack.png") no-repeat;
+	background-size: cover;
+	width: 200px;
+	height: 290px;
+	display: inline-block;
+	margin: 20px;
+	border: 10px solid white;
+	border-radius: 10px;
+	text-align: center;
+}
+
+div.flipped {
+	border-color: #009933;
+	background-size: cover;
+}
+
+div:not(.flipped):hover{
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* IE8 and earlier */
+}
+
+span.message{
+	color: #009933;
+	background: white;
+	border: 5px solid #009933;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+span button {
+	display: list-item;
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+div.countdown {
+	font-size: xx-large;
+	background: #313390;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px 0;
+}

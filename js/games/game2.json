@@ -1,0 +1,52 @@
+angular.callbacks._1 ([
+    {
+        "id": 1,
+        "name": "card3",
+        "url" : "../CardGame/css/images/card3.png"
+    },
+    {
+        "id": 2,
+        "name": "card5",
+        "url" : "../CardGame/css/images/card5.png"
+    },
+    {
+        "id": 3,
+        "name": "card3",
+        "url" : "../CardGame/css/images/card3.png"
+    },
+    {
+        "id": 4,
+        "name": "card1",
+        "url" : "../CardGame/css/images/card1.png"
+    },
+    {
+        "id": 5,
+        "name": "card2",
+        "url" : "../CardGame/css/images/card2.png"
+    },
+    {
+        "id": 6,
+        "name": "card5",
+        "url" : "../CardGame/css/images/card5.png"
+    },
+    {
+        "id": 7,
+        "name": "card4",
+        "url" : "../CardGame/css/images/card4.png"
+    },
+    {
+        "id": 8,
+        "name": "card1",
+        "url" : "../CardGame/css/images/card1.png"
+    },
+    {
+        "id": 9,
+        "name": "card4",
+        "url" : "../CardGame/css/images/card4.png"
+    },
+    {
+        "id": 10,
+        "name": "card2",
+        "url" : "../CardGame/css/images/card2.png"
+    }
+]);
