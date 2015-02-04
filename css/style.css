@@ -25,25 +25,35 @@ div:not(.flipped):hover{
     filter: alpha(opacity=60); /* IE8 and earlier */
 }
 
-span.message{
+div.message{
 	color: #009933;
 	background: white;
 	border: 5px solid #009933;
-	border-radius: 10px;
 	font-weight: bold;
-	font-size: 30px;
-	width: 100%;
+	font-size: xx-large;
+	border-radius: 20px;
+	padding: 10px 0;
 	text-align: center;
-	display: inline-block;
-	margin-top: 30px;
-	padding: 20px;
 }
 
-span button {
+div.message button {
 	display: list-item;
 	float: left;
 	padding: 5px;
-	margin-right: 20px;
+	margin: 5px 10px;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+}
+
+div.message button#reset {
+	background: #533C69;
+	border-color: #533C69;
+}
+
+div.message button#next {
+	background: #F7851C;
+	border-color: #F7851C;
 }
 
 div.countdown {
@@ -52,5 +62,5 @@ div.countdown {
 	font-weight: bold;
 	text-align: center;
 	border-radius: 20px;
-	padding: 10px 0;
+	padding: 15px 0;
 }

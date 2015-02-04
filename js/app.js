@@ -87,7 +87,7 @@
 				//if equal cards selected keep count of the rest and stop the countdown clock	
 				if (firstCard.data.name === secondCard.data.name) {	
 					scope.cardsNumber -= 2;
-					scope.stopClock();
+					scope.stopClock();					
 				}else{
 					//if different cards selected, block the user interface and wait a few seconds
 					//in order to show both cards
@@ -110,6 +110,7 @@
 			$http.jsonp('js/games/game'+ game +'.json?callback=JSON_CALLBACK')
 				.success(function (data){
 			        scope.cards = data;
+			        scope.counter = clockTime;
 			        scope.cardsNumber = data.length;
 			    })
 			    .error(function (error) {

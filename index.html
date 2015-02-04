@@ -9,12 +9,11 @@
 	<script	type="text/javascript" src="js/app.js"></script>
 </head>
 <body ng-controller="cardController as control">
-	<div class="countdown">Countdown: {{counter}}</div>
+	<div class="countdown" ng-show="(cardsNumber > 0)">Countdown: {{counter}}</div>
+	<div class="message" ng-show="(cardsNumber <= 0)">WINNER!!
+    	<button type="reset" id="reset" ng-click="resetGame()">Restart Game</button>
+    	<button ng-click="nextLevel()" id="next" ng-show="moreLevels()">Next Level</button>
+    </div>
 	<div ng-repeat="data in cards" class="card" ng-class="{flipped: flippedCard}" ng-click="flipCard($event)"></div>
-    <span class="message" ng-show="(cardsNumber <= 0)">
-    	WINNER!!
-    	<button type="reset" ng-click="resetGame()">Restart Game</button>
-    	<button ng-click="nextLevel()" ng-show="moreLevels()">Next Level</button>
-    </span>
 </body>
 </html>
