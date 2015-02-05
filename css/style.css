@@ -20,7 +20,7 @@ div.flipped {
 	background-size: cover;
 }
 
-div:not(.flipped):hover{
+div.card:not(.flipped):hover{
 	opacity: 0.6;
     filter: alpha(opacity=60); /* IE8 and earlier */
 }
