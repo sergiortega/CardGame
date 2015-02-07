@@ -12,10 +12,10 @@
 			secondCard = '',
 			firstElement = '',
 			secondElement = '',
-			clockTime = 5, //default countdown time in seconds
+			clockTime = 0, //default countdown time in seconds
 			stopped, //control over countdown timer
 			timer, //control over timer showing wrong cards during a few seconds
-			game = 1, //indicates the current game level
+			game = 0, //indicates the current game level
 			gamesLimit = 3; //maximum number of levels
 		scope.flippedCard = false;
 		scope.counter = clockTime;
@@ -102,7 +102,21 @@
 			}
 		};
 
-		//Goes to the next level
+		//Checks if we have reached the maximum value for levels and prevents
+		// the user to go the next level by hidding the "Next Level" button
+		scope.moreLevels = function(){
+			if(game < gamesLimit)
+				return true;
+			return false;
+		}
+
+		//Resets the page so the game starts again
+		scope.resetGame = function(){
+			$location.path('/');
+    		$window.location.reload();
+		};
+
+				//Goes to the next level
 		scope.nextLevel = function(){
 			game ++;
 			clockTime += 5;
@@ -118,28 +132,6 @@
 				});
 		};
 
-		//Checks if we have reached the maximum value for levels and prevents
-		// the user to go the next level by hidding the "Next Level" button
-		scope.moreLevels = function(){
-			if(game < gamesLimit)
-				return true;
-			return false;
-		}
-
-		//Resets the page so the game starts again
-		scope.resetGame = function(){
-			$location.path('/');
-    		$window.location.reload();
-		};
-
-		//$http.jsonp to obtain the json data from a file locally
-		$http.jsonp('js/games/game'+ game +'.json?callback=JSON_CALLBACK')
-			.success(function (data){
-		        scope.cards = data;
-		        scope.cardsNumber = data.length;
-		    })
-		    .error(function (error) {
-				console.log("Request failed", error);
-			});
+		scope.nextLevel(); //Loads the first level
 	});
 }());
