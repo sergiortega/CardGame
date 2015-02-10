@@ -97,7 +97,7 @@
 						flipCardsDown();
 						// Unblock the user interface
       					blockUI.stop();
-					}, 750);
+					}, 700);
 				}
 			}
 		};
